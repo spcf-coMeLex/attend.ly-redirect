@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+ 
+<meta charset="UTF-8">
+ 
+<script>
+  // Get URL parameters
+  const urlParams = new URLSearchParams(window.location.search);
+  const type = urlParams.get('type');
+
+  // Check if the parameter is "test"
+  if(urlParams.get('type') === 'forms') {
+    window.location.href = "https://forms.gle/ecuYZAcf6igZqHFX6";
+  } else if (urlParams.get('type' === "apk")) {
+    window.location.href = "https://google.com"
+  }
+</script>
+ 
+<title>Page Redirection</title>
+ 
+<!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
+If you are not redirected automatically, follow the links below:<br><br>
+
+<a href="https://forms.gle/ecuYZAcf6igZqHFX6">Fill up form</a><br><br>
+<a href="https://google.com">APK</a>
